@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
-    runs-on: self-hosted
-
+    runs-on: ik2machine
     steps:
     - uses: actions/checkout@v4
     - name: configure
@@ -18,4 +16,4 @@ jobs:
     - name: make
       run: df
     - name: dirs
-      mkdir ik2_test
+      run: mkdir ik2_test
