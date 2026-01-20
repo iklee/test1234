@@ -16,4 +16,4 @@ jobs:
     - name: configure
       run: pwd
     - name: make
-      run: mkdir ik2_m
+      run: df
