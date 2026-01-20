@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: df
     - name: dirs
-      mkdir ik2_test
+      run: mkdir ik2_test
