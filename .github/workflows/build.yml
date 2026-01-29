@@ -8,10 +8,17 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     
     steps:
     - uses: actions/checkout@v3
+
+    - name: Check environment
+      run: |
+        hostname
+        ifconfig
+        whoami
+        cat /etc/issue
 
     - name: Install dependencies
       run: |
