@@ -1,0 +1,21 @@
+name: Version
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-version:
+    #runs-on: self-hosted
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check environment
+      run: |
+        hostname
+        cat /etc/os-release
+
